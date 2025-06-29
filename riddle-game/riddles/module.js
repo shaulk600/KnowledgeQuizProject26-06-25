@@ -6,4 +6,6 @@ const riddlesArr = [];
 riddlesArr.push(r1);
 riddlesArr.push(r2);
 
-export default {riddlesArr};
+// console.log(riddlesArr); //test
+export  {riddlesArr}; 
+export default riddlesArr; 
