@@ -2,17 +2,18 @@
 
 import { question} from "readline-sync";
 
-// import { valid } from "./classes/Riddle.js";
-import { ask } from "./classes/Question.js";
+
+import ask from "./classes/Question.js";
 import { Player ,timeMessage } from "./classes/Player.js";
 
-
+let m = Date.now()
+console.log(m);
 const name = question("Enter your name: ");
 console.log(`Welcome ${name} to the Riddle Game!`);
 const play = new Player(name);
 while(true){
-    timeMessage(ask);
-    if ("yes" === question("Continue for another round?")){
+    timeMessage(play, ask);
+    if ("yes" !== question("Continue for another round?")){
         break;
     }
 }
