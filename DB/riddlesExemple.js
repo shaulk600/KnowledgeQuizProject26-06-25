@@ -45,8 +45,8 @@ function ConvertingObjectToString(){
 
     const dataString = JSON.stringify(Arr1);
     // console.log(`${dataString}`);
-    return dataString
+    return dataString;
 }
 
 //main:
-writeFile();
+// writeFile();
